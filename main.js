@@ -29,8 +29,8 @@ promise
   })
   .then((datos) => {
     console.log(datos);
-    mainSectionContainer.innerHTML += datos.map((todo) => {
-      return `<div class="todo-item">
+    datos.forEach((todo) => {
+      mainSectionContainer.innerHTML += `<div class="todo-item">
         <div class="title">
           <h3>${todo.title}</h3>
           <div class="actions">
